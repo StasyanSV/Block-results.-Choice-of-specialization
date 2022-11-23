@@ -6,3 +6,20 @@
 Console.Clear();
 
 string[] array1 = {"hello", "2", "world", ":-)", "1234", "cat"};
+
+string[] SecondArrayWithIF(string[] arr)
+{
+    string[] newArr = new string[arr.Length];
+
+    int count = 0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+    if(arr[i].Length <= 3)
+        {
+        newArr[count] = arr[i];
+        count++;
+        }
+    }
+    newArr  = newArr.SkipLast(arr.Length-count).ToArray();
+    return newArr;
+}
