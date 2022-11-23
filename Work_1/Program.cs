@@ -6,6 +6,9 @@
 Console.Clear();
 
 string[] array1 = {"hello", "2", "world", ":-)", "1234", "cat"};
+array1 = SecondArrayWithIF(array1);
+PrintArray(array1);
+
 
 string[] SecondArrayWithIF(string[] arr)
 {
