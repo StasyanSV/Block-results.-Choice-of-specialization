@@ -23,3 +23,12 @@ string[] SecondArrayWithIF(string[] arr)
     newArr  = newArr.SkipLast(arr.Length-count).ToArray();
     return newArr;
 }
+
+
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+}
